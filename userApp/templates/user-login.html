@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block baslik %} Giriş Yap {% endblock baslik %}
+
+{% block site-icerigi %}
+  
+
+<div class="container mt-5">
+
+<div class="form-area">
+
+    <h3>Giriş Yap</h3>
+    <hr>
+
+    <form action="{% url 'user-login' %}" method="post">
+        {% csrf_token %}
+        <input type="text" placeholder="Kullanıcı Adı" name="k_ad"  class="form-control">
+        <input type="password" placeholder="Şifre" name="k_sifre" class="form-control">
+        <span> Hesabın yok mu? <a href="{% url 'user-register' %}">şimdi kayıt ol</a> </span>
+
+        <div class="mt-3">
+
+            <button class="btn btn-success">Giriş Yap</button>
+        </div>
+
+    </form>
+
+
+
+</div>
+
+</div>
+{% endblock site-icerigi %}
