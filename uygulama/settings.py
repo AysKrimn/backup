@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # uygulamanın tokeni buraya:
-SECRET_KEY = 'django-insecure-=7v4gbvgfo_9^9je@ytln^9zh^5!@*ij1q_)e!^(z7yzd(b&#q'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
